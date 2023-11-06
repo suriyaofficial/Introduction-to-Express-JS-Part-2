@@ -17,7 +17,7 @@ const initializeDBAndServer = async () => {
       filename: dbPath,
       driver: sqlite3.Database,
     });
-    app.listen(5000, () => {
+    app.listen(3000, () => {
       console.log("Server Running... at http://localhost:3000/");
     });
   } catch (e) {
@@ -47,7 +47,7 @@ app.get("/books/", async (request, response) => {
     LIMIT ${limit} OFFSET ${offset};`;
   const booksArray = await db.all(getBooksQuery);
   response.send(booksArray);
-});});
+});
 app.get("/books/:bookId/", async (request, response) => {
   const { bookId } = request.params;
   const getBookQuery = `

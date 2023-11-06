@@ -57,4 +57,4 @@ GET http://localhost:3000/books/?limit=2
 GET http://localhost:3000/books/?offset=2&limit=3
 
 ###
-GET http://localhost:3000/authors/20/books/?offset=2
+GET http://localhost:3000/authors/10/books/?offset=2
