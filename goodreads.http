@@ -49,3 +49,12 @@ DELETE http://localhost:5000/books/46/
 ###
 
 GET http://localhost:5000/authors/1/books/
+
+###
+GET http://localhost:3000/books/?limit=2
+
+###
+GET http://localhost:3000/books/?offset=2&limit=3
+
+###
+GET http://localhost:3000/authors/20/books/?offset=2
